@@ -1,0 +1,61 @@
+.blog-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  /* background-color: pink; */
+}
+
+.blog-banner h1 {
+  font-family: "beloved-sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 68px;
+  line-height: 80px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.blog-banner h2 {
+  font-family: "warnock-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.post-grid {
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.post {
+  height: auto;
+  width: 200px;
+  padding: 0.2rem 1rem;
+  margin: 0.5rem;
+  background: #ffff00;
+  box-shadow: 4px 4px 8px 1px #00000075;
+  border-radius: 2px;
+}
+
+.post {
+  height: auto;
+  width: 200px;
+  padding: 0.25rem;
+  border-radius: 2px;
+}
+
+.title {
+  padding: 0.1rem;
+  font-size: 1rem;
+}
+
+.created {
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
