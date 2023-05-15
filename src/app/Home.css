@@ -56,3 +56,30 @@
   font-weight: 400;
   font-style: italic;
 }
+
+.slide-text-1 h1 {
+  animation: fadeInRight 4.5s ease-in-out;
+}
+
+.slide-text-2 {
+  animation: fadeIn 4.5s ease-in-out;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

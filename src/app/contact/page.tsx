@@ -1,8 +1,6 @@
 import React from "react";
 import "./Contact.css";
 import Headshot from "../assets/IWHeadshot2.jpg";
-// import Resume from "../documents/";
-// import "./samantha-callicutt-resume.pdf";
 // import Resume from "../assets/samantha-callicutt-resume.pdf";
 
 export default function Contact() {
@@ -28,14 +26,10 @@ export default function Contact() {
             >
               Send me an email
             </a>
-            {/* <a
-              href="/api/v1/print/example.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a> */}
             <a
               className="resume-button"
-              href="./assets/samantha-callicutt-resume.pdf"
+              href=""
+              // href={Resume}
               target="_blank"
               rel="noopener noreferrer"
             >
