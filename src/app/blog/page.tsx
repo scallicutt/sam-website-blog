@@ -32,11 +32,12 @@ export default async function Blog() {
 }
 
 function Post({ post }: any) {
-  const { id, title, created } = post || {};
+  const { id, post_image, title, created } = post || {};
 
   return (
     <Link href={`/posts/${id}`}>
       <div className="post">
+        <img src={post_image} id="post-image" />
         <h2>{title}</h2>
         <p>{created}</p>
       </div>
