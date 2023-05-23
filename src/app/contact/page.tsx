@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contact.css";
 import Headshot from "../assets/IWHeadshot2.jpg";
-// import Resume from "../assets/samantha-callicutt-resume.pdf";
 
 export default function Contact() {
   return (
@@ -28,8 +27,7 @@ export default function Contact() {
             </a>
             <a
               className="resume-button"
-              href=""
-              // href={Resume}
+              href="/samantha-callicutt-resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
