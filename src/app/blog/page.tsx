@@ -3,13 +3,18 @@ import "./Blog.css";
 import Link from "next/link";
 
 async function getPosts() {
-  const res = await fetch(
+  const post_data = await fetch(
     "http://127.0.0.1:8090/api/collections/posts/records",
     {
       cache: "no-store",
     }
   );
-  const data = await res.json();
+
+  // const post_image = await fetch(
+  //   "http://127.0.0.1:8090/api/collections/posts/records/id?thumb=100x300"
+  // )
+
+  const data = await post_data.json();
   return data?.items as any[];
 }
 
@@ -34,10 +39,14 @@ export default async function Blog() {
 function Post({ post }: any) {
   const { id, post_image, title, created } = post || {};
 
+  console.log(post);
   return (
     <Link href={`/posts/${id}`}>
       <div className="post">
-        <img src={post_image} id="post-image" />
+        <img
+          src={`http://127.0.0.1:8090/api/files/posts/${id}/${post_image}`}
+          id="post-image"
+        />
         <h2>{title}</h2>
         <p>{created}</p>
       </div>
