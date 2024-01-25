@@ -58,11 +58,11 @@
 }
 
 .slide-text-1 h1 {
-  animation: fadeInRight 4.5s ease-in-out;
+  animation: fadeInRight 2s ease-in-out;
 }
 
 .slide-text-2 {
-  animation: fadeIn 4.5s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
 }
 
 @keyframes fadeInRight {

@@ -18,20 +18,15 @@ export default function Contact() {
             aliquip ex ea commodo consequat.
           </p>
           <div className="flex flex-row">
-            <a
-              href="mailto:scallicutt18@gmail.com?subject=Dropping you a line!"
-              className="email-button"
-              role="button"
-            >
-              Send me an email
+            <a href="mailto:scallicutt18@gmail.com?subject=Dropping you a line!">
+              <button className="btn bg-white text-black border border-black px-4 py-2 hover:bg-black hover:text-white mr-4">
+                Send me an email
+              </button>
             </a>
-            <a
-              className="resume-button"
-              href="/samantha-callicutt-resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download my résumé
+            <a href="/samantha-callicutt-resume.pdf" target="_blank">
+              <button className="bg-white text-black border border-black px-4 py-2 hover:bg-black hover:text-white">
+                Download my résumé
+              </button>
             </a>
           </div>
         </div>

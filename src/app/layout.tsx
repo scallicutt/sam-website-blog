@@ -52,11 +52,6 @@ export default function RootLayout({
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/blog" className="nav-links writing">
-                    Blog
-                  </Link>
-                </li>
-                <li className="nav-item">
                   <Link href="/gallery" className="nav-links gallery">
                     Gallery
                   </Link>
