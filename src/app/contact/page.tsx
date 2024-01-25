@@ -17,7 +17,7 @@ export default function Contact() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <div className="buttons">
+          <div className="flex flex-row">
             <a
               href="mailto:scallicutt18@gmail.com?subject=Dropping you a line!"
               className="email-button"
