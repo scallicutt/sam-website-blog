@@ -4,7 +4,7 @@ import Headshot from "../assets/IWHeadshot2.jpg";
 
 export default function Contact() {
   return (
-    <div className="contact-container">
+    <div className="contact-container h-screen">
       <div className="contact-banner">
         <h1>Drop Me a Line</h1>
       </div>
@@ -12,10 +12,14 @@ export default function Contact() {
         <div className="contact-info">
           <h2>Lets work together!</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Hello! I'm Samantha, an aspiring journalist and passionate web
+            designer. If you're interested in collaborating, discussing
+            potential projects, or just want to say hi, I'd love to hear from
+            you. Connecting with like-minded individuals and professionals is
+            always exciting. Whether it's a journalistic inquiry, a web design
+            project, or any creative endeavor, feel free to drop me an email.
+            Let's explore how we can work together to create something amazing.
+            Don't hesitate to reach out!
           </p>
           <div className="flex flex-row">
             <a href="mailto:scallicutt18@gmail.com?subject=Dropping you a line!">
@@ -30,8 +34,12 @@ export default function Contact() {
             </a>
           </div>
         </div>
-        <div className="contact-photo">
-          <img src={Headshot.src} alt="Headshot" width={"400px"} />
+        <div className="flex justify-center items-center">
+          <img
+            src={Headshot.src}
+            alt="Headshot"
+            className="w-2/3 rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </div>

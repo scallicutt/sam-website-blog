@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import "./globals.css";
+import Footer from "./components/Post/Footer";
 
 export default function RootLayout({
   children,
@@ -11,18 +12,6 @@ export default function RootLayout({
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
-  // const handleClick = () => setClick(!click);
-  // const closeMobileMenu = () => setClick(false);
-
-  // const showButton = () => {
-  //   if (window.innerWidth <= 960) {
-  //     setButton(false);
-  //   } else {
-  //     setButton(true);
-  //   }
-  // };
-
-  // window.addEventListener("resize", showButton);
   return (
     <html>
       <head>
@@ -66,6 +55,7 @@ export default function RootLayout({
           </nav>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
