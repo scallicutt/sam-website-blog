@@ -23,7 +23,7 @@
 }
 
 .hero-container {
-  background-image: url(../app/assets/IWHeadshot.jpg);
+  background-image: url(../app/assets/home-headshot.jpeg);
   height: 120vh;
   width: 100%;
   display: flex;

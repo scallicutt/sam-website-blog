@@ -7,39 +7,58 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <h2 className="font-bold text-xl mb-2">About Me</h2>
+            <h2 className="font-bold text-xl mb-2">Elevator Pitch</h2>
             <p>
-              Pursuing a Master's in Journalism, I blend web design with
-              storytelling, focusing on unveiling hidden narratives and making
-              an impact.
+              Investigative, multimedia journalist and UofA Journalism grad
+              student. I tell stories using the power of technology to unveil
+              hidden narratives and give voice to the human experience.
             </p>
           </div>
           <div>
             <h2 className="font-bold text-xl mb-2">Contact</h2>
             <ul>
-              <li>Email: scallicutt18@gmail.com</li>
+              <li>scallicutt18@gmail.com</li>
             </ul>
           </div>
           <div>
             <h2 className="font-bold text-xl mb-2">Follow Me</h2>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-gray-400">
-                <i className="fab fa-facebook-f"></i>
+                <a
+                  href="https://www.facebook.com/samantha.a.callicutt"
+                  className="fab fa-facebook-f"
+                  target="_blank"
+                ></a>
               </a>
               <a href="#" className="hover:text-gray-400">
-                <i className="fab fa-twitter"></i>
+                <a
+                  href="https://x.com/scallicutt18?s=21"
+                  className="fab fa-twitter"
+                  target="_blank"
+                ></a>
               </a>
               <a href="#" className="hover:text-gray-400">
-                <i className="fab fa-instagram"></i>
+                <a
+                  href="https://www.instagram.com/samanthaacall"
+                  className="fab fa-instagram"
+                  target="_blank"
+                ></a>
               </a>
               <a href="#" className="hover:text-gray-400">
-                <i className="fab fa-linkedin-in"></i>
+                <a
+                  href="https://www.linkedin.com/in/samantha-callicutt/"
+                  className="fab fa-linkedin-in"
+                  target="_blank"
+                ></a>
               </a>
             </div>
           </div>
         </div>
         <div className="text-center mt-8 border-t border-gray-700 pt-4">
           &copy; {new Date().getFullYear()} Scallicutt. All Rights Reserved.
+          <br />
+          Website design and dev by S. Callicutt, with accredidation to R.
+          Scissons
         </div>
       </div>
     </footer>

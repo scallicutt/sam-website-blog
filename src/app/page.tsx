@@ -12,8 +12,8 @@ export default function Home() {
         </div>
         <div className="slide-text-2">
           <p className="hero-subtext">
-            <span className="subtext">Aspiring Journalist</span> |{" "}
-            <span className="subtext">Writer</span> |
+            <span className="subtext">Journalist</span> |{" "}
+            <span className="subtext">Producer</span> |
             <span className="subtext"> Performer</span>
           </p>
         </div>
