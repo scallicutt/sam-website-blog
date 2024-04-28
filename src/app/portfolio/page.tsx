@@ -51,6 +51,7 @@ export default function Portfolio() {
             allowFullScreen
           ></iframe>
         </div>
+        {/* Grab starting here to paste for a new video */}
         <div className="flex flex-col items-center p-4 bg-slate-200 rounded-lg">
           <h3 className="text-3xl">Nightfall at Old Tucson</h3>
           <iframe
@@ -63,6 +64,8 @@ export default function Portfolio() {
             allowFullScreen
           ></iframe>
         </div>
+        {/* Stop here! */}
+        {/* Grab starting here to paste for a new article */}
         <Link
           href="https://azluminaria.org/2024/04/01/forced-to-flee-civil-war-this-syrian-mother-found-a-new-home-in-tucson"
           target="_blank"
@@ -79,6 +82,7 @@ export default function Portfolio() {
             />
           </div>
         </Link>
+        {/* Stop here! */}
       </div>
     </div>
   );
