@@ -42,6 +42,11 @@ export default function RootLayout({
                   </Link>
                 </li>
                 <li className="nav-item">
+                  <Link href="/portfolio" className="nav-links about">
+                    Portfolio
+                  </Link>
+                </li>
+                <li className="nav-item">
                   <Link href="/gallery" className="nav-links gallery">
                     Gallery
                   </Link>
