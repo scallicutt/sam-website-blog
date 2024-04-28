@@ -16,12 +16,12 @@ export default function RootLayout({
   return (
     <html>
       <head>
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-        <link rel="stylesheet" href="https://use.typekit.net/iod5vog.css" />
-        <script
-          src="https://kit.fontawesome.com/611b21c2eb.js"
-          crossOrigin="anonymous"
-        ></script>
+        <title>Samantha Callicutt</title>
+        <meta
+          name="description"
+          content="Samantha Callicutt's personal website"
+        />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`${inter.className} antialiased`}>
         <main>
