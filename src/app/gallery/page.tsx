@@ -20,7 +20,7 @@ export default function Gallery() {
             <img
               src="https://via.placeholder.com/400x600"
               alt="Placeholder"
-              className="max-w-full max-h-full" // ensures image scales down if it's too large
+              className="max-w-full max-h-full"
             />
           </div>
         ))}
