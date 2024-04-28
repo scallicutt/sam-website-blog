@@ -27,7 +27,11 @@ export default function About() {
         </p>
       </div>
       <div className="imgage-col col">
-        <img className="about-image" src={Headshot.src} alt="Headshot" />
+        <img
+          className="about-image contain-content"
+          src={Headshot.src}
+          alt="Headshot"
+        />
       </div>
       {/* <div className="about-box">
         <h1>
