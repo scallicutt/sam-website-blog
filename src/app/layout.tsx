@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import "./globals.css";
 import Footer from "./components/Post/Footer";
+import { inter } from "./ui/fonts";
 
 export default function RootLayout({
   children,
@@ -22,7 +23,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></script>
       </head>
-      <body>
+      <body className={`${inter.className} antialiased`}>
         <main>
           <nav className="navbar">
             <div className="navbar-container">
