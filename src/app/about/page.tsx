@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import Headshot from "../assets/about-headshot.jpeg";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -27,8 +28,10 @@ export default function About() {
         </p>
       </div>
       <div className="imgage-col col">
-        <img
-          className="about-image contain-content"
+        <Image
+          className=""
+          width={400}
+          height={400}
           src={Headshot.src}
           alt="Headshot"
         />
