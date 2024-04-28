@@ -32,7 +32,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="text-center mt-8 border-t border-gray-700 pt-4">
+        <div className="text-center mt-8 border-t border-white pt-4">
           &copy; {new Date().getFullYear()} Scallicutt. All Rights Reserved.
           <br />
           Website design and dev by S. Callicutt
