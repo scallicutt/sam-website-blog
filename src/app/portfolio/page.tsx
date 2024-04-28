@@ -11,7 +11,7 @@ export default function Portfolio() {
           style={{ fontFamily: '"beloved-sans", sans-serif' }}
           className="text-7xl font-normal"
         >
-          Gallery
+          Portfolio
         </h1>
       </div>
       <div className="grid grid-cols-3 gap-1">
