@@ -17,7 +17,9 @@ export default function Footer() {
           <div>
             <h2 className="font-bold text-xl mb-2">Contact</h2>
             <ul>
-              <li>scallicutt18@gmail.com</li>
+              <Link href={"mailto:scallicutt18@gmail.com"}>
+                scallicutt18@gmail.com
+              </Link>
             </ul>
           </div>
           <div>
@@ -49,8 +51,7 @@ export default function Footer() {
         <div className="text-center mt-8 border-t border-gray-700 pt-4">
           &copy; {new Date().getFullYear()} Scallicutt. All Rights Reserved.
           <br />
-          Website design and dev by S. Callicutt, with accredidation to R.
-          Scissons
+          Website design and dev by S. Callicutt
         </div>
       </div>
     </footer>
