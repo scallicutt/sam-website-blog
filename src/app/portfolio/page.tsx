@@ -16,7 +16,7 @@ export default function Portfolio() {
           Portfolio
         </h1>
       </div>
-      <div className="grid grid-cols-3 gap-4 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         <div className="flex flex-col items-center p-4 bg-slate-200 rounded-lg">
           <h3 className="text-3xl">KOLD Intern Anchor Intro | April 8, 2024</h3>
           <iframe
