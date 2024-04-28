@@ -23,34 +23,26 @@ export default function Footer() {
           <div>
             <h2 className="font-bold text-xl mb-2">Follow Me</h2>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-gray-400">
-                <a
-                  href="https://www.facebook.com/samantha.a.callicutt"
-                  className="fab fa-facebook-f"
-                  target="_blank"
-                ></a>
-              </a>
-              <a href="#" className="hover:text-gray-400">
-                <a
-                  href="https://x.com/scallicutt18?s=21"
-                  className="fab fa-twitter"
-                  target="_blank"
-                ></a>
-              </a>
-              <a href="#" className="hover:text-gray-400">
-                <a
-                  href="https://www.instagram.com/samanthaacall"
-                  className="fab fa-instagram"
-                  target="_blank"
-                ></a>
-              </a>
-              <a href="#" className="hover:text-gray-400">
-                <a
-                  href="https://www.linkedin.com/in/samantha-callicutt/"
-                  className="fab fa-linkedin-in"
-                  target="_blank"
-                ></a>
-              </a>
+              <Link
+                href="https://www.facebook.com/samantha.a.callicutt"
+                className="fab fa-facebook-f hover:text-gray-400"
+                target="_blank"
+              ></Link>
+              <Link
+                href="https://x.com/scallicutt18?s=21"
+                className="fab fa-twitter hover:text-gray-400"
+                target="_blank"
+              ></Link>
+              <Link
+                href="https://www.instagram.com/samanthaacall"
+                className="fab fa-instagram hover:text-gray-400"
+                target="_blank"
+              ></Link>
+              <Link
+                href="https://www.linkedin.com/in/samantha-callicutt/"
+                className="fab fa-linkedin-in hover:text-gray-400"
+                target="_blank"
+              ></Link>
             </div>
           </div>
         </div>
