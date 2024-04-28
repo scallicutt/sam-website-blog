@@ -5,15 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#8b6f7c] text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div>
-            <h2 className="font-bold text-xl mb-2">Elevator Pitch</h2>
-            <p>
-              Investigative, multimedia journalist and UofA Journalism grad
-              student. I tell stories using the power of technology to unveil
-              hidden narratives and give voice to the human experience.
-            </p>
-          </div>
+        <div className="flex flex-row justify-between">
           <div>
             <h2 className="font-bold text-xl mb-2">Contact</h2>
             <ul>
