@@ -5,15 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#8b6f7c] text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="flex flex-row justify-between">
-          <div>
-            <h2 className="font-bold text-xl mb-2">Contact</h2>
-            <ul>
-              <Link href={"mailto:scallicutt18@gmail.com"}>
-                scallicutt18@gmail.com
-              </Link>
-            </ul>
-          </div>
+        <div className="flex justify-center">
           <div>
             <h2 className="font-bold text-xl mb-2">Follow Me</h2>
             <div className="flex space-x-4">
