@@ -25,10 +25,10 @@ export default function ContactPage() {
           <h2 className="text-4xl font-serif mb-8">Let's Chat!</h2>
           <div className="text-lg text-gray-700 space-y-6">
             <p>
-              Hello! I'm Samantha, a journalist and Master's degree student at
-              the University of Arizona. I specialize in multimedia,
+              Hello! I&apos;m Samantha, a journalist and Master&apos;s degree
+              student at the University of Arizona. I specialize in multimedia,
               investigative journalism and I am currently an intern for AZPM,
-              Tucson's local NPR affiliate.
+              Tucson&apos;s local NPR affiliate.
             </p>
             <p>
               In addition to my journalist work, I am also an actor. My
@@ -37,13 +37,13 @@ export default function ContactPage() {
               please see visit my acting page!
             </p>
             <p>
-              If you're interested in collaborating, discussing potential
-              projects, or just want to say hi, I'd love to hear from you.
+              If you&apos;re interested in collaborating, discussing potential
+              projects, or just want to say hi, I&apos;d love to hear from you.
               Connecting with like-minded individuals and professionals is
-              always exciting. Whether it's a journalistic inquiry, an acting
-              project, or any creative endeavor, feel free to drop me an email.
-              Let's explore how we can work together to create something
-              amazing. Don't hesitate to reach out!
+              always exciting. Whether it&apos;s a journalistic inquiry, an
+              acting project, or any creative endeavor, feel free to drop me an
+              email. Let&apos;s explore how we can work together to create
+              something amazing. Don&apos;t hesitate to reach out!
             </p>
           </div>
         </div>
