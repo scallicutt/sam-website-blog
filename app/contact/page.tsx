@@ -22,7 +22,7 @@ export default function ContactPage() {
       {/* Content Section */}
       <div className="container mx-auto px-4 py-16 grid grid-cols-2 gap-16">
         <div>
-          <h2 className="text-4xl font-serif mb-8">Let's Chat!</h2>
+          <h2 className="text-4xl font-serif mb-8">Let&apos;s Chat!</h2>
           <div className="text-lg text-gray-700 space-y-6">
             <p>
               Hello! I&apos;m Samantha, a journalist and Master&apos;s degree
