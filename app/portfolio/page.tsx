@@ -27,13 +27,15 @@ export default function PortfolioPage() {
             <Link href="/portfolio/articles" className="group">
               <div className="relative h-64 mb-4">
                 <Image
-                  src="/portfolio/articles-thumb.jpg"
+                  src="/images/stories/tucson-festival-of-books.jpg"
                   alt="Print Articles"
                   fill
                   className="object-cover"
                 />
               </div>
-              <h2 className="text-3xl font-light mb-3">Print Articles</h2>
+              <h2 className="text-3xl font-light mb-3 text-center">
+                Print Articles
+              </h2>
               <p className="text-gray-700">
                 Ped molor aspitassita sapicipsum cus sum qui neseniet quo ommdit
                 endit, int qui omnihi iment, ut
@@ -55,7 +57,7 @@ export default function PortfolioPage() {
                   className="object-cover"
                 />
               </div>
-              <h2 className="text-3xl font-light mb-3">Videos</h2>
+              <h2 className="text-3xl font-light mb-3 text-center">Videos</h2>
               <p className="text-gray-700">
                 Ex et laccatamus et int asped que porume reseque pos enis
                 doluptio quidistio intiam, optaqui conectus
@@ -77,7 +79,7 @@ export default function PortfolioPage() {
                   className="object-cover"
                 />
               </div>
-              <h2 className="text-3xl font-light mb-3">Audios</h2>
+              <h2 className="text-3xl font-light mb-3 text-center">Audios</h2>
               <p className="text-gray-700">
                 Tem. Tat. Temporempos dolores cidelipendis aut aut quos dem
                 aliquam altate imquiam repratur sume et eos

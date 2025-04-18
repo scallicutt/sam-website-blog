@@ -35,14 +35,6 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="hover:text-gray-400 transition-colors"
             >
-              <FaFacebook />
-            </a>
-            <a
-              href="https://www.instagram.com/samanthaacall"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-400 transition-colors"
-            >
               <FaInstagram />
             </a>
             <a

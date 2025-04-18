@@ -44,7 +44,7 @@ export default function ContactPage() {
         {/* Right column - Call to Action Buttons */}
         <div className="flex flex-col gap-8 justify-center">
           <Link
-            href="mailto:email@example.com"
+            href="mailto:scallicutt@arizona.edu"
             className="bg-[#0A1931] text-white py-8 px-6 text-center hover:bg-[#0A1931]/90 transition-colors"
           >
             <div className="text-2xl font-light">Send me an email</div>
