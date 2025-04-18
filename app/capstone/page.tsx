@@ -15,10 +15,10 @@ export default function CapstonePage() {
       <div className="container mx-auto px-4 py-12">
         <div className="flex justify-center gap-16 lg:gap-64 text-3xl">
           <Link
-            href="/capstone/document"
+            href="/capstone/documentary"
             className="font-fino-sans hover:underline underline-offset-4"
           >
-            Document
+            Documentary
           </Link>
           <Link
             href="/capstone/gallery"
