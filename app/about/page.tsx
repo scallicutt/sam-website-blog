@@ -9,7 +9,7 @@ export default function AboutPage() {
       <div className="max-w-3xl mx-auto">
         <div className="mb-16 aspect-square relative w-2/3 mx-auto">
           <Image
-            src="/assets/about-headshot.jpeg"
+            src="/images/sam/about-headshot.jpeg"
             alt="Samantha Callicutt"
             fill
             className="object-cover object-top"

@@ -7,7 +7,7 @@ export default function PortfolioPage() {
       {/* Hero Section */}
       <div className="relative h-[50vh] w-full">
         <Image
-          src="/assets/PANA3104.JPG"
+          src="/images/sam/PANA3104.JPG"
           alt="Portfolio header"
           fill
           className="object-cover"

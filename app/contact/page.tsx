@@ -7,7 +7,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <div className="relative h-[50vh] w-full">
         <Image
-          src="/assets/PANA3237-4.JPG"
+          src="/images/sam/PANA3237-4.JPG"
           alt="Contact header"
           fill
           className="object-cover"

@@ -38,7 +38,7 @@ export default function CapstonePage() {
       {/* Main Image Section */}
       <div className="relative w-full h-[50vh]">
         <Image
-          src="/assets/PANA3168-2.jpg"
+          src="/images/sam/PANA3168-2.jpg"
           alt="Capstone project filming"
           fill
           className="object-cover"
