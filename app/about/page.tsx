@@ -2,44 +2,69 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <div className="container mx-auto px-4 pt-32 pb-16">
+    <div className="container mx-auto px-4 pt-8 pb-16">
       <h1 className="text-[#0A1931] text-7xl mb-16 font-light tracking-widest text-center">
         MEET SAMANTHA
       </h1>
-      <div className="grid grid-cols-2 gap-2">
-        <div className="flex items-start justify-end">
-          <div className="aspect-square relative w-[75%]">
-            <Image
-              src="/assets/about-headshot.jpeg"
-              alt="Samantha Callicutt"
-              fill
-              className="object-cover object-top"
-            />
-          </div>
+      <div className="max-w-3xl mx-auto">
+        <div className="mb-16 aspect-square relative w-2/3 mx-auto">
+          <Image
+            src="/assets/about-headshot.jpeg"
+            alt="Samantha Callicutt"
+            fill
+            className="object-cover object-top"
+          />
         </div>
-        <div className="flex items-start">
-          <div className="w-[75%] text-lg leading-relaxed text-gray-700">
-            <p>
-              Ma aut aceperiat. Eceaquidest ventia volorror sum lla sa cum quos
-              et voles que et ut autemporio od quaest, tet fugit facolupa cupta
-              volut ad unt lab ipidit doles nim qui del maiorem rem re verita
-              sapedig enitendusias sumqui nusandunt accate vellaborum es et ut
-              everate ssimus sunt velectur?
-            </p>
-            <p className="mt-4">
-              Um a placcus sinctor estlis sum sin comnis et aut pa se pera
-              dolorem est elo tet eosserum elesserum as et miliquamus
-              miliorempore volorit ibeaquam, simagni tatius et parohicae quae
-              lamus et venes et arum cusam faceatlam, sunturlt optiaeri occus.
-            </p>
-            <p className="mt-4">
-              Axim quam diostium quidemos im quibus solorerchit quam qui od eum
-              quatius re nis aut rem sus sed mil idebitio doluptia exerovi
-              denessinto ist, consedic totas ut landita tectest, quae volores
-              equisit, soloresequam ra dus, quos issitiatis si dolecum estorum
-              resti bla nonet molupis esclenient eaquistorer.
-            </p>
-          </div>
+        <div className="text-lg leading-relaxed text-gray-700 space-y-6 font-obviously-thin">
+          <p>
+            I&apos;ve always believed that stories have the power to connect us
+            — across distance, across differences, across time. That belief is
+            what led me to become a journalist, data journalist, documentary
+            producer, and photographer. Whether through a written piece, a
+            documentary film, or a single photograph, I&apos;m driven by the
+            same goal: to capture real experiences and spark conversations that
+            matter.
+          </p>
+
+          <p>
+            My work blends deep reporting, data analysis, visual storytelling,
+            and field production to explore the complexities of the world we
+            live in. I&apos;m as comfortable digging into public records and
+            data sets as I am interviewing someone on the side of a highway or
+            filming a story as it unfolds. I&apos;m especially passionate about
+            uncovering stories that are often overlooked — stories about
+            resilience, change, and the human experience.
+          </p>
+
+          <p>
+            As a data journalist, I turn numbers into narratives. As a
+            documentary producer, I create space for voices that need to be
+            heard. As a photographer, I seek out the moments that reveal a
+            deeper truth.
+          </p>
+
+          <p>
+            My background spans traditional reporting, investigative journalism,
+            documentary film production, and visual storytelling. I&apos;m
+            passionate about digging beneath the surface — turning numbers into
+            narratives, shining a light on untold experiences, and creating work
+            that drives understanding and change.
+          </p>
+
+          <p>
+            Today, I blend my skills across mediums to tell complex,
+            human-centered stories with clarity, depth, and heart. I believe
+            that good storytelling can challenge assumptions, bridge divides,
+            and move people toward action — and that belief drives everything I
+            do.
+          </p>
+
+          <p>
+            Thanks for taking the time to get to know me. I&apos;m always
+            excited to connect with others who believe in the power of good
+            storytelling — and I&apos;m always looking for the next story worth
+            telling.
+          </p>
         </div>
       </div>
     </div>

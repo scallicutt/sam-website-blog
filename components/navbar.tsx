@@ -6,7 +6,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50">
+    <nav className="bg-white">
       <div className="max-w-5xl mx-auto px-4">
         <ul className="flex gap-16 py-8 justify-center text-xl">
           <li>
@@ -63,6 +63,18 @@ export default function Navbar() {
               }`}
             >
               Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/capstone"
+              className={`hover:text-black transition-all ${
+                pathname === "/capstone"
+                  ? "text-black underline"
+                  : "text-gray-500"
+              }`}
+            >
+              Capstone
             </Link>
           </li>
         </ul>

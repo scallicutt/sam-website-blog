@@ -1,42 +1,34 @@
 import React from "react";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <div
-      className="relative h-[120vh] w-full flex items-center justify-start bg-cover bg-center bg-no-repeat shadow-[inset_0_0_0_1000px_rgba(0,0,0,0.2)]"
-      style={{ backgroundImage: "url(/assets/home-headshot.jpeg)" }}
-    >
-      <div className="absolute top-[150px] left-[300px] text-center text-white">
-        <div className="animate-fadeInRight">
-          <h1 className="text-[68px] leading-[80px] tracking-[5px] font-normal font-[beloved-sans]">
-            Samantha
+    <div className="flex flex-col items-center justify-center mt-8 mx-auto">
+      <div className="grid grid-cols-2 gap-8 mb-8">
+        {/* Left Column - Text */}
+        <div className="flex flex-col justify-center">
+          <h1 className="text-8xl font-light mb-4">
+            samantha
+            <br />
+            callicutt
           </h1>
-          <h1
-            className="text-[65px] leading-[80px] tracking-[5px] font-normal font-[beloved-sans]"
-            id="last-name"
-          >
-            Callicutt
-          </h1>
+          <h2 className="text-2xl font-light tracking-wide">
+            Journalist | Producer | Performer
+          </h2>
         </div>
-        <div className="animate-fadeIn">
-          <p className="text-[20px] text-white text-center">
-            <span className="italic font-[warnock-pro] font-normal">
-              Journalist
-            </span>{" "}
-            |{" "}
-            <span className="italic font-[warnock-pro] font-normal">
-              Producer
-            </span>{" "}
-            |{" "}
-            <span className="italic font-[warnock-pro] font-normal">
-              Performer
-            </span>
-          </p>
+
+        {/* Right Column - Image */}
+        <div className="relative">
+          <Image
+            src="/assets/PANA3104.JPG"
+            alt="Samantha Callicutt"
+            width={300}
+            height={400}
+            className="w-full h-auto"
+            priority
+          />
         </div>
       </div>
-
-      {/* for when you want a video hero instead of background image */}
-      {/* <video className="fixed w-full h-full object-cover -z-10" src={HeroVideo} autoPlay loop muted /> */}
     </div>
   );
 }

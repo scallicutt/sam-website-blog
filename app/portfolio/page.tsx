@@ -1,48 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-interface Article {
-  date: string;
-  title: string;
-  description: string;
-  image: string;
-  link: string;
-}
-
-const articles: Article[] = [
-  {
-    date: "Feb 26, 2025",
-    title: "Venezuelan family in Tucson faces ICE inquiry",
-    description:
-      "A Venezuelan family in South Tucson was unexpectedly visited by ICE agents investigating concerns of child trafficking and prostitution, despite the family asserting that their...",
-    image: "/portfolio/venezuelan-family.jpg",
-    link: "/portfolio/venezuelan-family",
-  },
-  {
-    date: "Nov 2, 2024",
-    title: "Arizona propositions explained",
-    description:
-      "The article provides a detailed breakdown of the statewide propositions on Arizona's 2024 ballot, covering their potential impact, key arguments for and against each measure, and who is...",
-    image: "/portfolio/vote-here.jpg",
-    link: "/portfolio/arizona-propositions",
-  },
-  {
-    date: "Apr 1, 2024",
-    title: "This Syrian mother found a new home in Tucson",
-    description:
-      "In 2020, Dalal, a Syrian single mother of four, experienced life-changing luck during the COVID-19 pandemic. After fleeing domestic violence in Lebanon, her journey took her...",
-    image: "/portfolio/syrian-mother.jpg",
-    link: "/portfolio/syrian-mother",
-  },
-];
-
 export default function PortfolioPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <div className="relative h-[50vh] w-full">
         <Image
-          src="/portfolio/hero.jpg"
+          src="/assets/PANA3104.JPG"
           alt="Portfolio header"
           fill
           className="object-cover"
@@ -54,33 +19,74 @@ export default function PortfolioPage() {
         </h1>
       </div>
 
-      {/* Articles Grid */}
+      {/* Categories Grid */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-3 gap-8">
-          {articles.map((article, index) => (
-            <div key={index} className="flex flex-col">
-              <Link href={article.link} className="group">
-                <div className="relative h-64 mb-4">
-                  <Image
-                    src={article.image}
-                    alt={article.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="text-gray-500 mb-2">{article.date}</div>
-                <h2 className="text-2xl font-serif mb-3 group-hover:underline">
-                  {article.title}
-                </h2>
-                <p className="text-gray-700 line-clamp-3">
-                  {article.description}
-                </p>
-                <div className="mt-4 text-gray-500 group-hover:underline">
-                  View Article
-                </div>
-              </Link>
-            </div>
-          ))}
+          {/* Print Articles Section */}
+          <div className="flex flex-col">
+            <Link href="/portfolio/articles" className="group">
+              <div className="relative h-64 mb-4">
+                <Image
+                  src="/portfolio/articles-thumb.jpg"
+                  alt="Print Articles"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h2 className="text-3xl font-light mb-3">Print Articles</h2>
+              <p className="text-gray-700">
+                Ped molor aspitassita sapicipsum cus sum qui neseniet quo ommdit
+                endit, int qui omnihi iment, ut
+              </p>
+              <div className="mt-4 text-gray-500 group-hover:underline">
+                View Articles
+              </div>
+            </Link>
+          </div>
+
+          {/* Videos Section */}
+          <div className="flex flex-col">
+            <Link href="/portfolio/videos" className="group">
+              <div className="relative h-64 mb-4">
+                <Image
+                  src="/portfolio/videos-thumb.jpg"
+                  alt="Videos"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h2 className="text-3xl font-light mb-3">Videos</h2>
+              <p className="text-gray-700">
+                Ex et laccatamus et int asped que porume reseque pos enis
+                doluptio quidistio intiam, optaqui conectus
+              </p>
+              <div className="mt-4 text-gray-500 group-hover:underline">
+                View Videos
+              </div>
+            </Link>
+          </div>
+
+          {/* Audios Section */}
+          <div className="flex flex-col">
+            <Link href="/portfolio/audio" className="group">
+              <div className="relative h-64 mb-4">
+                <Image
+                  src="/portfolio/audio-thumb.jpg"
+                  alt="Audio Recordings"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h2 className="text-3xl font-light mb-3">Audios</h2>
+              <p className="text-gray-700">
+                Tem. Tat. Temporempos dolores cidelipendis aut aut quos dem
+                aliquam altate imquiam repratur sume et eos
+              </p>
+              <div className="mt-4 text-gray-500 group-hover:underline">
+                View Audio Recordings
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

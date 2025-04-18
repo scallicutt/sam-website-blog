@@ -3,7 +3,7 @@ import React from "react";
 import "./globals.css";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import { inter } from "@/components/fonts";
+import { finoSans, obviouslyRegular, obviouslyLight } from "@/components/fonts";
 
 export default function RootLayout({
   children,
@@ -11,7 +11,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="h-full">
+    <html
+      className={`h-full ${finoSans.variable} ${obviouslyRegular.variable} ${obviouslyLight.variable}`}
+    >
       <head>
         <title>Samantha Callicutt</title>
         <meta
@@ -21,7 +23,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
-        className={`${inter.className} antialiased min-h-full flex flex-col`}
+        className={`${obviouslyLight.className} antialiased min-h-full flex flex-col`}
       >
         <Navbar />
         <main className="flex-grow bg-white text-black">{children}</main>
