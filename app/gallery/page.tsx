@@ -6,43 +6,37 @@ export default function GalleryPage() {
       id: 1,
       src: "/images/sam/PANA3221.jpg",
       alt: "",
-      description:
-        ""
+      description: ""
     },
     {
       id: 2,
       src: "/images/sam/PANA3221.jpg",
       alt: "",
-      description:
-        ""
+      description: ""
     },
     {
       id: 3,
       src: "/images/sam/PANA3221.jpg",
       alt: "",
-      description:
-        ""
+      description: ""
     },
     {
       id: 4,
       src: "/images/sam/PANA3221.jpg",
       alt: "",
-      description:
-        ""
+      description: ""
     },
     {
       id: 5,
       src: "/images/sam/PANA3221.jpg",
       alt: "",
-      description:
-        ""
+      description: ""
     },
     {
       id: 6,
       src: "/images/sam/PANA3221.jpg",
       alt: "",
-      description:
-        ""
+      description: ""
     },
   ];
 

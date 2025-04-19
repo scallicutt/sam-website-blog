@@ -51,7 +51,7 @@ export default function PortfolioPage() {
             <Link href="/portfolio/videos" className="group">
               <div className="relative h-64 mb-4">
                 <Image
-                  src="/images/sam/PANA3168-2.jpg"
+                  src="/images/sam/PANA3168.jpg"
                   alt="Videos"
                   fill
                   className="object-cover"
