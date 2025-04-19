@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const pathname = usePathname();
 
+  const isPortfolioSection = pathname.startsWith("/portfolio");
+
   return (
     <nav className="bg-white">
       <div className="max-w-5xl mx-auto px-4">
@@ -12,9 +14,8 @@ export default function Navbar() {
           <li>
             <Link
               href="/"
-              className={`hover:text-black transition-all ${
-                pathname === "/" ? "text-black underline" : "text-gray-500"
-              }`}
+              className={`hover:text-black transition-all ${pathname === "/" ? "text-black underline" : "text-gray-500"
+                }`}
             >
               Home
             </Link>
@@ -22,9 +23,8 @@ export default function Navbar() {
           <li>
             <Link
               href="/about"
-              className={`hover:text-black transition-all ${
-                pathname === "/about" ? "text-black underline" : "text-gray-500"
-              }`}
+              className={`hover:text-black transition-all ${pathname === "/about" ? "text-black underline" : "text-gray-500"
+                }`}
             >
               About
             </Link>
@@ -32,11 +32,8 @@ export default function Navbar() {
           <li>
             <Link
               href="/portfolio"
-              className={`hover:text-black transition-all ${
-                pathname === "/portfolio"
-                  ? "text-black underline"
-                  : "text-gray-500"
-              }`}
+              className={`hover:text-black transition-all ${isPortfolioSection ? "text-black underline" : "text-gray-500"
+                }`}
             >
               Portfolio
             </Link>
@@ -44,11 +41,8 @@ export default function Navbar() {
           <li>
             <Link
               href="/gallery"
-              className={`hover:text-black transition-all ${
-                pathname === "/gallery"
-                  ? "text-black underline"
-                  : "text-gray-500"
-              }`}
+              className={`hover:text-black transition-all ${pathname === "/gallery" ? "text-black underline" : "text-gray-500"
+                }`}
             >
               Gallery
             </Link>
@@ -56,11 +50,8 @@ export default function Navbar() {
           <li>
             <Link
               href="/contact"
-              className={`hover:text-black transition-all ${
-                pathname === "/contact"
-                  ? "text-black underline"
-                  : "text-gray-500"
-              }`}
+              className={`hover:text-black transition-all ${pathname === "/contact" ? "text-black underline" : "text-gray-500"
+                }`}
             >
               Contact
             </Link>
@@ -68,11 +59,8 @@ export default function Navbar() {
           <li>
             <Link
               href="/capstone"
-              className={`hover:text-black transition-all ${
-                pathname === "/capstone"
-                  ? "text-black underline"
-                  : "text-gray-500"
-              }`}
+              className={`hover:text-black transition-all ${pathname === "/capstone" ? "text-black underline" : "text-gray-500"
+                }`}
             >
               Capstone
             </Link>
