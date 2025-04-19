@@ -41,7 +41,7 @@ export default function VideosPage() {
       {/* Hero Section */}
       <div className="relative h-[30vh] w-full">
         <Image
-          src="/images/sam/PANA3221.jpg"
+          src="/images/sam/sam-camera-sitting-1.jpg"
           alt="Videos header"
           fill
           className="object-cover"
