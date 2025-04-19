@@ -4,45 +4,45 @@ export default function GalleryPage() {
   const galleryItems = [
     {
       id: 1,
-      src: "/assets/gallery/portrait1.jpg",
-      alt: "Portrait photo",
+      src: "/images/sam/PANA3221.jpg",
+      alt: "",
       description:
-        "Ped molor aspitassita sapicipsum cus sum qui neseniet quo ommmodit endit, int qui omnihinc.",
+        ""
     },
     {
       id: 2,
-      src: "/assets/gallery/couple1.jpg",
-      alt: "Couple in vintage van",
+      src: "/images/sam/PANA3221.jpg",
+      alt: "",
       description:
-        "Ped molor aspitassita sapicipsum cus sum qui neseniet quo ommmodit endit, int qui omnihinc.",
+        ""
     },
     {
       id: 3,
-      src: "/assets/gallery/nature1.jpg",
-      alt: "Nature photo",
+      src: "/images/sam/PANA3221.jpg",
+      alt: "",
       description:
-        "Ped molor aspitassita sapicipsum cus sum qui neseniet quo ommmodit endit, int qui omnihinc.",
+        ""
     },
     {
       id: 4,
-      src: "/assets/gallery/portrait2.jpg",
-      alt: "Portrait photo",
+      src: "/images/sam/PANA3221.jpg",
+      alt: "",
       description:
-        "Ped molor aspitassita sapicipsum cus sum qui neseniet quo ommmodit endit, int qui omnihinc.",
+        ""
     },
     {
       id: 5,
-      src: "/assets/gallery/couple2.jpg",
-      alt: "Couple in vintage van",
+      src: "/images/sam/PANA3221.jpg",
+      alt: "",
       description:
-        "Ped molor aspitassita sapicipsum cus sum qui neseniet quo ommmodit endit, int qui omnihinc.",
+        ""
     },
     {
       id: 6,
-      src: "/assets/gallery/nature2.jpg",
-      alt: "Nature photo",
+      src: "/images/sam/PANA3221.jpg",
+      alt: "",
       description:
-        "Ped molor aspitassita sapicipsum cus sum qui neseniet quo ommmodit endit, int qui omnihinc.",
+        ""
     },
   ];
 

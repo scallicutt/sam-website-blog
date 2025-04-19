@@ -27,7 +27,7 @@ export default function PortfolioPage() {
             <Link href="/portfolio/articles" className="group">
               <div className="relative h-64 mb-4">
                 <Image
-                  src="/images/stories/tucson-festival-of-books.jpg"
+                  src="/images/stories/yoleidy-and-her-son-hero.jpg"
                   alt="Print Articles"
                   fill
                   className="object-cover"
@@ -51,7 +51,7 @@ export default function PortfolioPage() {
             <Link href="/portfolio/videos" className="group">
               <div className="relative h-64 mb-4">
                 <Image
-                  src="/portfolio/videos-thumb.jpg"
+                  src="/images/sam/PANA3168-2.jpg"
                   alt="Videos"
                   fill
                   className="object-cover"
@@ -73,7 +73,7 @@ export default function PortfolioPage() {
             <Link href="/portfolio/audio" className="group">
               <div className="relative h-64 mb-4">
                 <Image
-                  src="/portfolio/audio-thumb.jpg"
+                  src="/images/stories/broadcasting-microphone.jpg"
                   alt="Audio Recordings"
                   fill
                   className="object-cover"

@@ -20,7 +20,7 @@ export default function ContactPage() {
       </div>
 
       {/* Content Section */}
-      <div className="container mx-auto px-4 md:px-32 py-16 grid grid-cols-2 gap-16">
+      <div className="container mx-auto px-4 md:px-32 py-16 grid grid-cols-1 lg:grid-cols-2 gap-16">
         <div>
           <h2 className="text-4xl font-serif mb-8">Let&apos;s Chat!</h2>
           <div className="text-lg text-gray-700 space-y-6">
