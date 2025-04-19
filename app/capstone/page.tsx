@@ -8,15 +8,15 @@ export default function CapstonePage() {
   const [activeSection, setActiveSection] = useState<Section>("documentary");
 
   const galleryImages = [
-    "/images/sam/PANA3221.jpg",
-    "/images/sam/PANA3221.jpg",
-    "/images/sam/PANA3221.jpg",
-    "/images/sam/PANA3221.jpg",
-    "/images/sam/PANA3221.jpg",
-    "/images/sam/PANA3221.jpg",
-    "/images/sam/PANA3221.jpg",
-    "/images/sam/PANA3221.jpg",
-    "/images/sam/PANA3221.jpg",
+    "/images/sam/sam-camera-shooting-1.jpg",
+    "/images/sam/sam-camera-shooting-2.jpg",
+    "/images/sam/sam-camera-shooting-3.jpg",
+    "/images/sam/sam-camera-shooting-4.jpg",
+    "/images/sam/sam-camera-shooting-5.jpg",
+    "/images/sam/sam-camera-shooting-6.jpg",
+    "/images/sam/sam-camera-shooting-7.jpg",
+    "/images/sam/sam-camera-shooting-8.jpg",
+    "/images/sam/sam-camera-shooting-9.jpg",
   ];
 
   return (

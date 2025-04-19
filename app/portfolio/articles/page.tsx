@@ -166,7 +166,7 @@ export default function ArticlesPage() {
       {/* Hero Section */}
       <div className="relative h-[30vh] w-full">
         <Image
-          src="/images/sam/PANA3221.jpg"
+          src="/images/sam/sam-camera-shooting-4.jpg"
           alt="Articles header"
           fill
           className="object-cover"

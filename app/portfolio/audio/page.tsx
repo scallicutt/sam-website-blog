@@ -136,7 +136,7 @@ export default function AudioPage() {
       {/* Hero Section */}
       <div className="relative h-[30vh] w-full">
         <Image
-          src="/images/sam/PANA3199.jpg"
+          src="/images/sam/sam-camera-sitting-2.jpg"
           alt="Videos header"
           fill
           className="object-cover"

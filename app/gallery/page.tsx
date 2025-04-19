@@ -4,40 +4,59 @@ export default function GalleryPage() {
   const galleryItems = [
     {
       id: 1,
-      src: "/images/sam/PANA3221.jpg",
+      src: "/images/sam/sam-camera-shooting-1.jpg",
       alt: "",
       description: ""
     },
     {
       id: 2,
-      src: "/images/sam/PANA3221.jpg",
+      src: "/images/sam/sam-camera-shooting-2.jpg",
       alt: "",
       description: ""
     },
     {
       id: 3,
-      src: "/images/sam/PANA3221.jpg",
+      src: "/images/sam/sam-camera-shooting-3.jpg",
       alt: "",
       description: ""
     },
     {
       id: 4,
-      src: "/images/sam/PANA3221.jpg",
+      src: "/images/sam/sam-camera-shooting-4.jpg",
       alt: "",
       description: ""
     },
     {
       id: 5,
-      src: "/images/sam/PANA3221.jpg",
+      src: "/images/sam/sam-camera-shooting-5.jpg",
       alt: "",
       description: ""
     },
     {
       id: 6,
-      src: "/images/sam/PANA3221.jpg",
+      src: "/images/sam/sam-camera-shooting-6.jpg",
       alt: "",
       description: ""
     },
+    {
+      id: 7,
+      src: "/images/sam/sam-camera-shooting-7.jpg",
+      alt: "",
+      description: ""
+    },
+    {
+      id: 8,
+      src: "/images/sam/sam-camera-shooting-8.jpg",
+      alt: "",
+      description: ""
+    },
+    {
+      id: 9,
+      src: "/images/sam/sam-camera-shooting-9.jpg",
+      alt: "",
+      description: ""
+    },
+
   ];
 
   return (

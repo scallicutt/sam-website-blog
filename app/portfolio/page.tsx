@@ -7,7 +7,7 @@ export default function PortfolioPage() {
       {/* Hero Section */}
       <div className="relative h-[50vh] w-full">
         <Image
-          src="/images/sam/PANA3104.JPG"
+          src="/images/sam/sam-camera-shooting-6.jpg"
           alt="Portfolio header"
           fill
           className="object-cover"
@@ -51,7 +51,7 @@ export default function PortfolioPage() {
             <Link href="/portfolio/videos" className="group">
               <div className="relative h-64 mb-4">
                 <Image
-                  src="/images/sam/PANA3168.jpg"
+                  src="/images/sam/sam-camera-shooting-3.jpg"
                   alt="Videos"
                   fill
                   className="object-cover"

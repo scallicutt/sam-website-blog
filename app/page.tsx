@@ -20,7 +20,7 @@ export default function HomePage() {
         {/* Right Column - Image */}
         <div className="relative">
           <Image
-            src="/images/sam/PANA3104.JPG"
+            src="/images/sam/sam-camera-shooting-6.jpg"
             alt="Samantha Callicutt"
             width={300}
             height={400}
