@@ -37,8 +37,8 @@ export default function PortfolioPage() {
                 Print Articles
               </h2>
               <p className="text-gray-700">
-                Ped molor aspitassita sapicipsum cus sum qui neseniet quo ommdit
-                endit, int qui omnihi iment, ut
+                A collection of print articles that I have written for various
+                publications.
               </p>
               <div className="mt-4 text-gray-500 group-hover:underline">
                 View Articles
@@ -59,8 +59,8 @@ export default function PortfolioPage() {
               </div>
               <h2 className="text-3xl font-light mb-3 text-center">Videos</h2>
               <p className="text-gray-700">
-                Ex et laccatamus et int asped que porume reseque pos enis
-                doluptio quidistio intiam, optaqui conectus
+                A collection of videos that I have produced, edited, or
+                appeared in.
               </p>
               <div className="mt-4 text-gray-500 group-hover:underline">
                 View Videos
@@ -81,8 +81,8 @@ export default function PortfolioPage() {
               </div>
               <h2 className="text-3xl font-light mb-3 text-center">Audios</h2>
               <p className="text-gray-700">
-                Tem. Tat. Temporempos dolores cidelipendis aut aut quos dem
-                aliquam altate imquiam repratur sume et eos
+                A collection of audio clips that showcase my work as a
+                journalist.
               </p>
               <div className="mt-4 text-gray-500 group-hover:underline">
                 View Audio Recordings
