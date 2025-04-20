@@ -33,7 +33,6 @@ export default function VideosPage() {
       description: ``,
       date: "May 2, 2024",
     },
-
   ];
 
   return (
@@ -41,7 +40,7 @@ export default function VideosPage() {
       {/* Hero Section */}
       <div className="relative h-[30vh] w-full">
         <Image
-          src="/images/sam/sam-camera-sitting-1.jpg"
+          src="/images/sam/banner-videos.jpg"
           alt="Videos header"
           fill
           className="object-cover"

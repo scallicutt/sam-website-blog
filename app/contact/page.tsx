@@ -5,16 +5,16 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <div className="relative h-[50vh] w-full">
+      <div className="relative h-[30vh] w-full">
         <Image
-          src="/images/sam/sam-camera-shooting-2.jpg"
+          src="/images/sam/banner-contact.jpg"
           alt="Contact header"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black/10" />
-        <h1 className="absolute inset-0 flex items-center justify-center text-white text-7xl font-light tracking-widest">
+        <div className="absolute inset-0 bg-black/20" />
+        <h1 className="absolute inset-0 flex items-center justify-center text-white text-7xl font-fino-sans tracking-widest">
           CONNECT WITH ME
         </h1>
       </div>

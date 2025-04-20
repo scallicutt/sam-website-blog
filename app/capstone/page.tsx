@@ -21,9 +21,17 @@ export default function CapstonePage() {
 
   return (
     <div className="flex flex-col">
-      {/* Hero Section with Navy Background */}
-      <div className="bg-[#0A1931] py-16 flex items-center justify-center">
-        <h1 className="text-white text-7xl font-fino-sans text-center tracking-widest">
+      {/* Hero Section */}
+      <div className="relative h-[30vh] w-full">
+        <Image
+          src="/images/sam/banner-capstone.jpg"
+          alt="Capstone header"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/20" />
+        <h1 className="absolute inset-0 flex items-center justify-center text-white text-7xl font-fino-sans tracking-widest">
           CAPSTONE
         </h1>
       </div>
@@ -33,28 +41,31 @@ export default function CapstonePage() {
         <div className="flex justify-center gap-16 text-xl">
           <button
             onClick={() => setActiveSection("documentary")}
-            className={`font-fino-sans transition-all duration-300 cursor-pointer ${activeSection === "documentary"
-              ? "text-[#0A1931] underline underline-offset-4"
-              : "text-gray-500 hover:text-[#0A1931]"
-              }`}
+            className={`font-fino-sans transition-all duration-300 cursor-pointer ${
+              activeSection === "documentary"
+                ? "text-[#0A1931] underline underline-offset-4"
+                : "text-gray-500 hover:text-[#0A1931]"
+            }`}
           >
             Documentary
           </button>
           <button
             onClick={() => setActiveSection("gallery")}
-            className={`font-fino-sans transition-all duration-300 cursor-pointer ${activeSection === "gallery"
-              ? "text-[#0A1931] underline underline-offset-4"
-              : "text-gray-500 hover:text-[#0A1931]"
-              }`}
+            className={`font-fino-sans transition-all duration-300 cursor-pointer ${
+              activeSection === "gallery"
+                ? "text-[#0A1931] underline underline-offset-4"
+                : "text-gray-500 hover:text-[#0A1931]"
+            }`}
           >
             Gallery
           </button>
           <button
             onClick={() => setActiveSection("text")}
-            className={`font-fino-sans transition-all duration-300 cursor-pointer ${activeSection === "text"
-              ? "text-[#0A1931] underline underline-offset-4"
-              : "text-gray-500 hover:text-[#0A1931]"
-              }`}
+            className={`font-fino-sans transition-all duration-300 cursor-pointer ${
+              activeSection === "text"
+                ? "text-[#0A1931] underline underline-offset-4"
+                : "text-gray-500 hover:text-[#0A1931]"
+            }`}
           >
             Text
           </button>
@@ -65,10 +76,11 @@ export default function CapstonePage() {
       <div className="container mx-auto px-4 pb-16">
         {/* Documentary Section */}
         <div
-          className={`transform transition-all duration-500 ${activeSection === "documentary"
-            ? "opacity-100 translate-y-0 visible max-h-[2000px]"
-            : "opacity-0 translate-y-4 invisible max-h-0 overflow-hidden"
-            }`}
+          className={`transform transition-all duration-500 ${
+            activeSection === "documentary"
+              ? "opacity-100 translate-y-0 visible max-h-[2000px]"
+              : "opacity-0 translate-y-4 invisible max-h-0 overflow-hidden"
+          }`}
         >
           <div className="max-w-5xl mx-auto">
             <div className="aspect-video">
@@ -89,10 +101,11 @@ export default function CapstonePage() {
 
         {/* Gallery Section */}
         <div
-          className={`transform transition-all duration-500 ${activeSection === "gallery"
-            ? "opacity-100 translate-y-0 visible max-h-[2000px]"
-            : "opacity-0 translate-y-4 invisible max-h-0 overflow-hidden"
-            }`}
+          className={`transform transition-all duration-500 ${
+            activeSection === "gallery"
+              ? "opacity-100 translate-y-0 visible max-h-[2000px]"
+              : "opacity-0 translate-y-4 invisible max-h-0 overflow-hidden"
+          }`}
         >
           <div className="grid grid-cols-3 gap-4 max-w-5xl mx-auto">
             {galleryImages.map((image, index) => (
@@ -111,10 +124,11 @@ export default function CapstonePage() {
 
         {/* Text Section */}
         <div
-          className={`transform transition-all duration-500 ${activeSection === "text"
-            ? "opacity-100 translate-y-0 visible max-h-[2000px]"
-            : "opacity-0 translate-y-4 invisible max-h-0 overflow-hidden"
-            }`}
+          className={`transform transition-all duration-500 ${
+            activeSection === "text"
+              ? "opacity-100 translate-y-0 visible max-h-[2000px]"
+              : "opacity-0 translate-y-4 invisible max-h-0 overflow-hidden"
+          }`}
         >
           <div className="prose prose-lg mx-auto font-obviously-light">
             <h2 className="text-4xl font-fino-sans text-center mb-8">
@@ -125,18 +139,19 @@ export default function CapstonePage() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                dolores eos qui ratione voluptatem sequi nesciunt.
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt.
               </p>
               <p>
                 Ut enim ad minima veniam, quis nostrum exercitationem ullam
@@ -154,12 +169,12 @@ export default function CapstonePage() {
                 rerum facilis est et expedita distinctio. Nam libero tempore,
                 cum soluta nobis est eligendi optio cumque nihil impedit quo
                 minus id quod maxime placeat facere possimus, omnis voluptas
-                assumenda est, omnis dolor repellendus. Temporibus autem quibusdam
-                et aut officiis debitis aut rerum necessitatibus saepe eveniet
-                ut et voluptates repudiandae sint et molestiae non recusandae.
-                Itaque earum rerum hic tenetur a sapiente delectus, ut aut
-                reiciendis voluptatibus maiores alias consequatur aut perferendis
-                doloribus asperiores repellat.
+                assumenda est, omnis dolor repellendus. Temporibus autem
+                quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                eveniet ut et voluptates repudiandae sint et molestiae non
+                recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
+                ut aut reiciendis voluptatibus maiores alias consequatur aut
+                perferendis doloribus asperiores repellat.
               </p>
             </div>
           </div>
@@ -182,6 +197,6 @@ export default function CapstonePage() {
           ole&apos; big rigs&quot; is a job for EVERYONE.
         </p>
       </div>
-    </div >
+    </div>
   );
 }

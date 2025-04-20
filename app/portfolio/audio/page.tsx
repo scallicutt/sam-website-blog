@@ -42,7 +42,8 @@ export default function AudioPage() {
     {
       title: "Dogs N' Denim",
       src: "/assets/audio/Dogs N_ Denim 10-22 AM.wav",
-      description: "Feature story on a unique local event combining fashion and pet adoption.",
+      description:
+        "Feature story on a unique local event combining fashion and pet adoption.",
       date: "October 22, 2024",
     },
     {
@@ -66,7 +67,8 @@ export default function AudioPage() {
     {
       title: "ICE Extreme Show of Force",
       src: "/assets/audio/ICE Extreme Show of Force 03-19 PM.wav",
-      description: "Analysis of law enforcement tactics during immigration operations.",
+      description:
+        "Analysis of law enforcement tactics during immigration operations.",
       date: "March 19, 2024",
     },
     {
@@ -120,7 +122,8 @@ export default function AudioPage() {
     {
       title: "San Carlos Apache Water",
       src: "/assets/audio/San Carlos Apache Water 9-4 AM.wav",
-      description: "Coverage of water rights issues affecting the San Carlos Apache Tribe.",
+      description:
+        "Coverage of water rights issues affecting the San Carlos Apache Tribe.",
       date: "September 4, 2024",
     },
     {
@@ -136,8 +139,8 @@ export default function AudioPage() {
       {/* Hero Section */}
       <div className="relative h-[30vh] w-full">
         <Image
-          src="/images/sam/sam-camera-sitting-2.jpg"
-          alt="Videos header"
+          src="/images/sam/banner-audio.jpg"
+          alt="Audio header"
           fill
           className="object-cover"
           priority
@@ -153,17 +156,12 @@ export default function AudioPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {audioClips.map((clip, index) => (
             <div key={index} className="flex flex-col p-6">
-
               <h2 className="text-2xl font-fino-sans leading-tight text-center mb-4">
                 {clip.title}
               </h2>
               {/* Audio Player */}
               <div className="mb-4">
-                <audio
-                  controls
-                  className="w-full"
-                  src={clip.src}
-                >
+                <audio controls className="w-full" src={clip.src}>
                   Your browser does not support the audio element.
                 </audio>
               </div>
