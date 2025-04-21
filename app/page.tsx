@@ -13,7 +13,7 @@ export default function HomePage() {
             callicutt
           </h1>
           <h2 className="text-2xl font-light tracking-wide">
-            Journalist | Producer | Performer
+            Journalist | Producer | Story Teller
           </h2>
         </div>
 
