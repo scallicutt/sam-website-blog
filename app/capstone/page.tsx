@@ -3,12 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 type Section = "documentary" | "gallery" | "text";
-type GalleryCategory =
-  | "trucks"
-  | "On The Road"
-  | "HDS"
-  | "Editing"
-  | "Bloopers";
+type GalleryCategory = "trucks" | "ontheroad" | "HDS" | "editing" | "bloopers";
 
 export default function CapstonePage() {
   const [activeSection, setActiveSection] = useState<Section>("documentary");
@@ -198,7 +193,7 @@ export default function CapstonePage() {
                       : "text-gray-500 hover:text-[#0A1931]"
                   }`}
                 >
-                  {category}
+                  {category === "ontheroad" ? "On The Road" : category}
                 </button>
               ))}
             </div>

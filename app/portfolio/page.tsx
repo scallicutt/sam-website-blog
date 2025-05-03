@@ -21,7 +21,7 @@ export default function PortfolioPage() {
 
       {/* Categories Grid */}
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Print Articles Section */}
           <div className="flex flex-col">
             <Link href="/portfolio/articles" className="group">
