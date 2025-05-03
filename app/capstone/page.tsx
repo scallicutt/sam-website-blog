@@ -3,7 +3,12 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 type Section = "documentary" | "gallery" | "text";
-type GalleryCategory = "trucks" | "ontheroad" | "hds" | "editing" | "bloopers";
+type GalleryCategory =
+  | "trucks"
+  | "On The Road"
+  | "HDS"
+  | "Editing"
+  | "Bloopers";
 
 export default function CapstonePage() {
   const [activeSection, setActiveSection] = useState<Section>("documentary");
@@ -24,7 +29,7 @@ export default function CapstonePage() {
           "0"
         )}.jpg`
     ),
-    hds: Array.from(
+    HDS: Array.from(
       { length: 54 },
       (_, i) => `/images/capstone/hds/hds_${String(i + 1).padStart(4, "0")}.jpg`
     ),
