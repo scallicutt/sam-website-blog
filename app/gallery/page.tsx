@@ -2,29 +2,37 @@
 
 import Image from "next/image";
 import { useState, useCallback, useEffect, useRef } from "react";
-import type { KeyboardEvent as ReactKeyboardEvent } from 'react';
 
 export default function GalleryPage() {
-  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
+    null
+  );
   const dialogRef = useRef<HTMLDialogElement>(null);
 
-  // Generate array of 113 items for all photos
-  const galleryItems = Array.from({ length: 113 }, (_, i) => ({
+  const galleryItems = Array.from({ length: 126 }, (_, i) => ({
     id: i + 1,
-    src: `/images/photo-gallery/${String(i + 1).padStart(4, '0')}.jpg`,
+    src: `/images/photo-gallery/${String(i + 1).padStart(4, "0")}.jpg`,
     alt: `Gallery photo ${i + 1}`,
-    description: ""
+    description: "",
   }));
 
   const handlePrevious = useCallback(() => {
     setSelectedImageIndex((current) =>
-      current !== null ? (current > 0 ? current - 1 : galleryItems.length - 1) : null
+      current !== null
+        ? current > 0
+          ? current - 1
+          : galleryItems.length - 1
+        : null
     );
   }, [galleryItems.length]);
 
   const handleNext = useCallback(() => {
     setSelectedImageIndex((current) =>
-      current !== null ? (current < galleryItems.length - 1 ? current + 1 : 0) : null
+      current !== null
+        ? current < galleryItems.length - 1
+          ? current + 1
+          : 0
+        : null
     );
   }, [galleryItems.length]);
 
@@ -33,13 +41,13 @@ export default function GalleryPage() {
     const handleGlobalKeyDown = (e: KeyboardEvent) => {
       if (selectedImageIndex === null) return;
 
-      if (e.key === 'ArrowLeft') handlePrevious();
-      if (e.key === 'ArrowRight') handleNext();
-      if (e.key === 'Escape') setSelectedImageIndex(null);
+      if (e.key === "ArrowLeft") handlePrevious();
+      if (e.key === "ArrowRight") handleNext();
+      if (e.key === "Escape") setSelectedImageIndex(null);
     };
 
-    window.addEventListener('keydown', handleGlobalKeyDown);
-    return () => window.removeEventListener('keydown', handleGlobalKeyDown);
+    window.addEventListener("keydown", handleGlobalKeyDown);
+    return () => window.removeEventListener("keydown", handleGlobalKeyDown);
   }, [selectedImageIndex, handlePrevious, handleNext]);
 
   // Focus management
@@ -66,7 +74,9 @@ export default function GalleryPage() {
               onClick={() => setSelectedImageIndex(index)}
               role="button"
               tabIndex={0}
-              onKeyDown={(e) => e.key === 'Enter' && setSelectedImageIndex(index)}
+              onKeyDown={(e) =>
+                e.key === "Enter" && setSelectedImageIndex(index)
+              }
             >
               <Image
                 src={item.src}
@@ -98,8 +108,19 @@ export default function GalleryPage() {
               className="absolute top-4 right-4 text-white hover:text-gray-300 z-50"
               onClick={() => setSelectedImageIndex(null)}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
 
@@ -108,8 +129,19 @@ export default function GalleryPage() {
               className="absolute left-4 text-white hover:text-gray-300 z-50"
               onClick={handlePrevious}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
               </svg>
             </button>
 
@@ -117,8 +149,19 @@ export default function GalleryPage() {
               className="absolute right-4 text-white hover:text-gray-300 z-50"
               onClick={handleNext}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </button>
 
