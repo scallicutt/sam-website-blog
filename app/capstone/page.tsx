@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 type Section = "documentary" | "gallery" | "text";
@@ -8,19 +8,83 @@ export default function CapstonePage() {
   const [activeSection, setActiveSection] = useState<Section>("documentary");
 
   const galleryImages = [
-    "/images/sam/sam-camera-shooting-1.jpg",
-    "/images/sam/sam-camera-shooting-2.jpg",
-    "/images/sam/sam-camera-shooting-3.jpg",
-    "/images/sam/sam-camera-shooting-4.jpg",
-    "/images/sam/sam-camera-shooting-5.jpg",
-    "/images/sam/sam-camera-shooting-6.jpg",
-    "/images/sam/sam-camera-shooting-7.jpg",
-    "/images/sam/sam-camera-shooting-8.jpg",
-    "/images/sam/sam-camera-shooting-9.jpg",
+    "/images/capstone/0001.jpg",
+    "/images/capstone/0002.jpg",
+    "/images/capstone/0003.jpg",
+    "/images/capstone/0004.jpg",
+    "/images/capstone/0005.jpg",
+    "/images/capstone/0006.jpg",
+    "/images/capstone/0007.jpg",
+    "/images/capstone/0008.jpg",
+    "/images/capstone/0009.jpg",
+    "/images/capstone/0010.jpg",
+    "/images/capstone/0011.jpg",
+    "/images/capstone/0012.jpg",
+    "/images/capstone/0013.jpg",
+    "/images/capstone/0014.jpg",
+    "/images/capstone/0015.jpg",
+    "/images/capstone/0016.jpg",
+    "/images/capstone/0017.jpg",
+    "/images/capstone/0018.jpg",
+    "/images/capstone/0019.jpg",
+    "/images/capstone/0020.jpg",
+    "/images/capstone/0021.jpg",
+    "/images/capstone/0022.jpg",
+    "/images/capstone/0023.jpg",
+    "/images/capstone/0024.jpg",
+    "/images/capstone/0025.jpg",
+    "/images/capstone/0026.jpg",
+    "/images/capstone/0027.jpg",
+    "/images/capstone/0028.jpg",
+    "/images/capstone/0029.jpg",
+    "/images/capstone/0030.jpg",
+    "/images/capstone/0031.jpg",
+    "/images/capstone/0032.jpg",
+    "/images/capstone/0033.jpg",
+    "/images/capstone/0034.jpg",
+    "/images/capstone/0035.jpg",
+    "/images/capstone/0036.jpg",
+    "/images/capstone/0037.jpg",
+    "/images/capstone/0038.jpg",
+    "/images/capstone/0039.jpg",
+    "/images/capstone/0040.jpg",
+    "/images/capstone/0041.jpg",
+    "/images/capstone/0042.jpg",
+    "/images/capstone/0043.jpg",
+    "/images/capstone/0044.jpg",
   ];
 
+  // Gallery pagination state
+  const imagesPerPage = 9;
+  const [galleryPage, setGalleryPage] = useState(0);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+
+  const totalPages = Math.ceil(galleryImages.length / imagesPerPage);
+  const startIdx = galleryPage * imagesPerPage;
+  const endIdx = startIdx + imagesPerPage;
+  const currentImages = galleryImages.slice(startIdx, endIdx);
+
+  const handlePrevPage = () => setGalleryPage((p) => (p > 0 ? p - 1 : totalPages - 1));
+  const handleNextPage = () => setGalleryPage((p) => (p < totalPages - 1 ? p + 1 : 0));
+
+  // Keyboard navigation for modal
+  useEffect(() => {
+    if (selectedImageIndex === null) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') {
+        setSelectedImageIndex((idx) => idx !== null ? (idx - 1 + galleryImages.length) % galleryImages.length : null);
+      } else if (e.key === 'ArrowRight') {
+        setSelectedImageIndex((idx) => idx !== null ? (idx + 1) % galleryImages.length : null);
+      } else if (e.key === 'Escape') {
+        setSelectedImageIndex(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedImageIndex, galleryImages.length]);
+
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col flex-1">
       {/* Hero Section */}
       <div className="relative h-[30vh] w-full">
         <Image
@@ -41,31 +105,28 @@ export default function CapstonePage() {
         <div className="flex justify-center gap-16 text-xl">
           <button
             onClick={() => setActiveSection("documentary")}
-            className={`font-fino-sans transition-all duration-300 cursor-pointer ${
-              activeSection === "documentary"
-                ? "text-[#0A1931] underline underline-offset-4"
-                : "text-gray-500 hover:text-[#0A1931]"
-            }`}
+            className={`font-fino-sans transition-all duration-300 cursor-pointer ${activeSection === "documentary"
+              ? "text-[#0A1931] underline underline-offset-4"
+              : "text-gray-500 hover:text-[#0A1931]"
+              }`}
           >
             Documentary
           </button>
           <button
             onClick={() => setActiveSection("gallery")}
-            className={`font-fino-sans transition-all duration-300 cursor-pointer ${
-              activeSection === "gallery"
-                ? "text-[#0A1931] underline underline-offset-4"
-                : "text-gray-500 hover:text-[#0A1931]"
-            }`}
+            className={`font-fino-sans transition-all duration-300 cursor-pointer ${activeSection === "gallery"
+              ? "text-[#0A1931] underline underline-offset-4"
+              : "text-gray-500 hover:text-[#0A1931]"
+              }`}
           >
             Gallery
           </button>
           <button
             onClick={() => setActiveSection("text")}
-            className={`font-fino-sans transition-all duration-300 cursor-pointer ${
-              activeSection === "text"
-                ? "text-[#0A1931] underline underline-offset-4"
-                : "text-gray-500 hover:text-[#0A1931]"
-            }`}
+            className={`font-fino-sans transition-all duration-300 cursor-pointer ${activeSection === "text"
+              ? "text-[#0A1931] underline underline-offset-4"
+              : "text-gray-500 hover:text-[#0A1931]"
+              }`}
           >
             Text
           </button>
@@ -76,11 +137,10 @@ export default function CapstonePage() {
       <div className="container mx-auto px-4 pb-16">
         {/* Documentary Section */}
         <div
-          className={`transform transition-all duration-500 ${
-            activeSection === "documentary"
-              ? "opacity-100 translate-y-0 visible max-h-[2000px]"
-              : "opacity-0 translate-y-4 invisible max-h-0 overflow-hidden"
-          }`}
+          className={`transform transition-all duration-500 ${activeSection === "documentary"
+            ? "opacity-100 translate-y-0 visible max-h-[2000px]"
+            : "opacity-0 translate-y-4 invisible max-h-0 overflow-hidden"
+            }`}
         >
           <div className="max-w-5xl mx-auto">
             <div className="aspect-video">
@@ -101,34 +161,114 @@ export default function CapstonePage() {
 
         {/* Gallery Section */}
         <div
-          className={`transform transition-all duration-500 ${
-            activeSection === "gallery"
-              ? "opacity-100 translate-y-0 visible max-h-[2000px]"
-              : "opacity-0 translate-y-4 invisible max-h-0 overflow-hidden"
-          }`}
+          className={`transform transition-all duration-500 ${activeSection === "gallery"
+            ? "opacity-100 translate-y-0 visible max-h-[2000px]"
+            : "opacity-0 translate-y-4 invisible max-h-0 overflow-hidden"
+            }`}
         >
-          <div className="grid grid-cols-3 gap-4 max-w-5xl mx-auto">
-            {galleryImages.map((image, index) => (
-              <div key={index} className="aspect-square w-full h-auto relative">
-                <Image
-                  src={image}
-                  alt={`Gallery image ${index + 1}`}
-                  className="object-cover w-full h-full"
-                  width={400}
-                  height={400}
-                />
-              </div>
-            ))}
+          <div className="relative max-w-5xl mx-auto">
+            {/* Left Arrow */}
+            <button
+              className="absolute left-0 top-1/2 -translate-y-1/2 -ml-20 z-10 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+              onClick={handlePrevPage}
+              aria-label="Previous"
+              style={{ display: totalPages > 1 ? 'block' : 'none' }}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            {/* Right Arrow */}
+            <button
+              className="absolute right-0 top-1/2 -translate-y-1/2 -mr-20 z-10 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+              onClick={handleNextPage}
+              aria-label="Next"
+              style={{ display: totalPages > 1 ? 'block' : 'none' }}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+            <div className="grid grid-cols-3 gap-4">
+              {currentImages.map((image, idx) => (
+                <div
+                  key={startIdx + idx}
+                  className="aspect-square w-full h-auto relative cursor-pointer group"
+                  onClick={() => setSelectedImageIndex(startIdx + idx)}
+                  tabIndex={0}
+                  role="button"
+                  onKeyDown={e => e.key === 'Enter' && setSelectedImageIndex(startIdx + idx)}
+                >
+                  <Image
+                    src={image}
+                    alt={`Gallery image ${startIdx + idx + 1}`}
+                    className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-200"
+                    width={400}
+                    height={400}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
+          {/* Modal Dialog */}
+          {selectedImageIndex !== null && (
+            <dialog
+              className="fixed inset-0 w-full h-full bg-black/90 z-50 flex items-center justify-center outline-none"
+              open
+              onClick={e => {
+                if (e.target === e.currentTarget) setSelectedImageIndex(null);
+              }}
+              tabIndex={-1}
+            >
+              <div className="relative w-full h-full flex items-center justify-center">
+                {/* Close button */}
+                <button
+                  className="absolute top-4 right-4 text-white hover:text-gray-300 z-50"
+                  onClick={() => setSelectedImageIndex(null)}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+                {/* Navigation buttons */}
+                <button
+                  className="absolute left-4 text-white hover:text-gray-300 z-50"
+                  onClick={() => setSelectedImageIndex((selectedImageIndex! - 1 + galleryImages.length) % galleryImages.length)}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button
+                  className="absolute right-4 text-white hover:text-gray-300 z-50"
+                  onClick={() => setSelectedImageIndex((selectedImageIndex! + 1) % galleryImages.length)}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+                {/* Full size image */}
+                <div className="relative w-[90vw] h-[90vh]">
+                  <Image
+                    src={galleryImages[selectedImageIndex]}
+                    alt={`Gallery image ${selectedImageIndex + 1}`}
+                    fill
+                    className="object-contain"
+                    sizes="90vw"
+                    priority
+                  />
+                </div>
+              </div>
+            </dialog>
+          )}
         </div>
 
         {/* Text Section */}
         <div
-          className={`transform transition-all duration-500 ${
-            activeSection === "text"
-              ? "opacity-100 translate-y-0 visible max-h-[2000px]"
-              : "opacity-0 translate-y-4 invisible max-h-0 overflow-hidden"
-          }`}
+          className={`transform transition-all duration-500 ${activeSection === "text"
+            ? "opacity-100 translate-y-0 visible max-h-[2000px]"
+            : "opacity-0 translate-y-4 invisible max-h-0 overflow-hidden"
+            }`}
         >
           <div className="prose prose-lg mx-auto font-obviously-light">
             <h2 className="text-4xl font-fino-sans text-center mb-8">

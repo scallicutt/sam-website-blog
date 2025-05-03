@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import "./globals.css";
 import Footer from "@/components/footer";
@@ -23,7 +22,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
-        className={`${obviouslyLight.className} antialiased min-h-full flex flex-col`}
+        className={`${obviouslyLight.className} antialiased min-h-screen flex flex-col`}
       >
         <Navbar />
         <main className="flex-grow bg-white text-black">{children}</main>

@@ -50,7 +50,7 @@ export default function GalleryPage() {
   }, [selectedImageIndex]);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col">
       {/* Header */}
       <div className="text-center py-16">
         <h1 className="text-6xl font-light tracking-widest">GALLERY</h1>
